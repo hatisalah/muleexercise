@@ -1,0 +1,20 @@
+#%RAML 1.0
+title: information
+/hello:
+  post:
+    queryParameters:
+      name:
+        type: string
+        description: name of a preson
+        maxLength: 10
+        required: true
+        example: hayat
+    responses:
+      201:
+        body:
+          application/json:
+            example:
+              {
+                msg: "hello hayat welcome to mulesoft, today is 06/18/21"
+              }
+            
